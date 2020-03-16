@@ -16,7 +16,7 @@ namespace vector_array
         }
         public VectorIterator(Vector vetor)
         {
-            this.contador=-1;
+            this.contador=0;
             this.vetor = vetor;
         }
 

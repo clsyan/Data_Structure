@@ -1,0 +1,11 @@
+/home/yan/Documents/estrutura_csharp/vector_array/bin/Debug/netcoreapp2.2/vector_array.deps.json
+/home/yan/Documents/estrutura_csharp/vector_array/bin/Debug/netcoreapp2.2/vector_array.runtimeconfig.json
+/home/yan/Documents/estrutura_csharp/vector_array/bin/Debug/netcoreapp2.2/vector_array.runtimeconfig.dev.json
+/home/yan/Documents/estrutura_csharp/vector_array/bin/Debug/netcoreapp2.2/vector_array.dll
+/home/yan/Documents/estrutura_csharp/vector_array/bin/Debug/netcoreapp2.2/vector_array.pdb
+/home/yan/Documents/estrutura_csharp/vector_array/obj/Debug/netcoreapp2.2/vector_array.csprojAssemblyReference.cache
+/home/yan/Documents/estrutura_csharp/vector_array/obj/Debug/netcoreapp2.2/vector_array.csproj.CoreCompileInputs.cache
+/home/yan/Documents/estrutura_csharp/vector_array/obj/Debug/netcoreapp2.2/vector_array.AssemblyInfoInputs.cache
+/home/yan/Documents/estrutura_csharp/vector_array/obj/Debug/netcoreapp2.2/vector_array.AssemblyInfo.cs
+/home/yan/Documents/estrutura_csharp/vector_array/obj/Debug/netcoreapp2.2/vector_array.dll
+/home/yan/Documents/estrutura_csharp/vector_array/obj/Debug/netcoreapp2.2/vector_array.pdb

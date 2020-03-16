@@ -25,11 +25,12 @@ namespace vector_array
         }
         public object elementAtRank(int current)
         {
-            if(current < 0 || current >= size())
-            {
-                throw new EIndexOutOfRange("erro de index");
-            }
+            try{
             return array[current];
+            }
+            catch{    
+                throw new EIndexOutOfRange("erro de index");
+            } 
         }
         public object replaceAtRank(int index, object obj)
         {
@@ -43,7 +44,7 @@ namespace vector_array
         }
         public void insertAtRank(int index, object obj)
         {
-            if(index < 0 || index >= size())
+            if(index < 0 || index >= tamanho)
             {
                 throw new EIndexOutOfRange("erro de index");
             }
@@ -52,20 +53,50 @@ namespace vector_array
                 int newTamanho = this.tamanho * 2;
                 object []newArray = new object[newTamanho];
                 VectorIterator it = GetEnumerator();
-                Object ob = it.Current;
+                
                 int i=0;
+
                 while(it.MoveNext())
                 {
-                    newArray[i] = obj
+                    Object ob = it.Current;
+
+                    newArray[i] = ob;
+                    ob = it.Current;
+                    i++;
                 }
-
-  
+                array = newArray;
+                this.tamanho = newTamanho;
             }
-
+            for (int i = this.current - 1; i >= index; i--)
+            {
+                array[i+1] = array[i];
+            }
+            array[index] = obj;
+            this.current++;
         }
+        public object removeAtRank(int index)
+        {
+            if(index < 0 || index >= tamanho)
+            {
+                throw new EIndexOutOfRange("erro de index");
+            }
+            object aux = array[index];
+            for(int i = index; i<this.current - 1; i++)
+            {
+                array[i] = array[i+1];
+            }
+            this.current--;
+            return aux;
+        }
+
         public VectorIterator GetEnumerator()
         {
-            return (VectorIterator) GetEnumerator();
+            return new VectorIterator(this);
+        }
+
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            throw new NotImplementedException();
         }
     }
 }
