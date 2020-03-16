@@ -1,0 +1,11 @@
+/home/yan/Documents/estrutura_csharp/lista_LDE/obj/Debug/netcoreapp2.2/lista_LDE.csprojAssemblyReference.cache
+/home/yan/Documents/estrutura_csharp/lista_LDE/obj/Debug/netcoreapp2.2/lista_LDE.csproj.CoreCompileInputs.cache
+/home/yan/Documents/estrutura_csharp/lista_LDE/obj/Debug/netcoreapp2.2/lista_LDE.AssemblyInfoInputs.cache
+/home/yan/Documents/estrutura_csharp/lista_LDE/obj/Debug/netcoreapp2.2/lista_LDE.AssemblyInfo.cs
+/home/yan/Documents/estrutura_csharp/lista_LDE/bin/Debug/netcoreapp2.2/lista_LDE.deps.json
+/home/yan/Documents/estrutura_csharp/lista_LDE/bin/Debug/netcoreapp2.2/lista_LDE.runtimeconfig.json
+/home/yan/Documents/estrutura_csharp/lista_LDE/bin/Debug/netcoreapp2.2/lista_LDE.runtimeconfig.dev.json
+/home/yan/Documents/estrutura_csharp/lista_LDE/bin/Debug/netcoreapp2.2/lista_LDE.dll
+/home/yan/Documents/estrutura_csharp/lista_LDE/bin/Debug/netcoreapp2.2/lista_LDE.pdb
+/home/yan/Documents/estrutura_csharp/lista_LDE/obj/Debug/netcoreapp2.2/lista_LDE.dll
+/home/yan/Documents/estrutura_csharp/lista_LDE/obj/Debug/netcoreapp2.2/lista_LDE.pdb

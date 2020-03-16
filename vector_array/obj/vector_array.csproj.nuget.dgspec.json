@@ -1,0 +1,58 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/yan/Documents/estrutura_csharp/vector_array/vector_array.csproj": {}
+  },
+  "projects": {
+    "/home/yan/Documents/estrutura_csharp/vector_array/vector_array.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/yan/Documents/estrutura_csharp/vector_array/vector_array.csproj",
+        "projectName": "vector_array",
+        "projectPath": "/home/yan/Documents/estrutura_csharp/vector_array/vector_array.csproj",
+        "packagesPath": "/home/yan/.nuget/packages/",
+        "outputPath": "/home/yan/Documents/estrutura_csharp/vector_array/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/home/yan/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}
