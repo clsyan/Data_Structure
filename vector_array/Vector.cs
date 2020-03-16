@@ -1,8 +1,9 @@
 ﻿using System;
+using System.Collections;
 
 namespace vector_array
 {
-    class Vector
+    class Vector:IEnumerable
     {
         private object[] array;
         private int tamanho;
@@ -49,11 +50,22 @@ namespace vector_array
             if (this.current == this.tamanho)
             {
                 int newTamanho = this.tamanho * 2;
-                Vector newArray = new Vector(newTamanho);
-                newArray.array = this.array;
-                this.array = newArray;
+                object []newArray = new object[newTamanho];
+                VectorIterator it = GetEnumerator();
+                Object ob = it.Current;
+                int i=0;
+                while(it.MoveNext())
+                {
+                    newArray[i] = obj
+                }
+
+  
             }
 
+        }
+        public VectorIterator GetEnumerator()
+        {
+            return (VectorIterator) GetEnumerator();
         }
     }
 }

@@ -1,13 +1,27 @@
 using System;
-using System.Collections.Generic;
+using System.Collections;
 
 namespace vector_array
 {
-    class VectorIterator
+    class VectorIterator:IEnumerator
     {
         private Vector vetor;
-        private int current;
-        private int fim;
+        private int contador;
+        public Object Current
+        {
+            get
+            {
+                return vetor.elementAtRank(contador);
+            }
+        }
+        public VectorIterator(Vector vetor)
+        {
+            this.contador=-1;
+            this.vetor = vetor;
+        }
+
+
+        /*
         public VectorIterator(Vector vetor)
         {
             this.vetor = vetor;
@@ -30,6 +44,18 @@ namespace vector_array
         public void reset()
         {
             this.current = 0;
+        }
+        */
+
+        public bool MoveNext()
+        {
+            contador++;
+            return (this.contador < vetor.size());
+        }
+
+        public void Reset()
+        {
+            this.contador = -1;
         }
     }
 }
