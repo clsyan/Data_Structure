@@ -1,15 +1,15 @@
 using System;
 using lista_LDE;
 
-public class NoSentinelaFim
-{
-    private NoDuplo anterior;
-    public NoDuplo getAnterior()
+namespace lista_LDE{
+
+    class NoSentinelaFim:NoDuplo
     {
-        return this.anterior;
-    }
-    public void setAnterior(NoDuplo elemento)
-    {
-        this.anterior = elemento;
+        private NoDuplo anterior;
+        
+        public override void setAnterior(NoDuplo ant)
+        {
+            this.anterior = ant;
+        }
     }
 }

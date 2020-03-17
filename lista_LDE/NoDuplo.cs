@@ -11,6 +11,10 @@ namespace lista_LDE
         {
             this.elemento = elemento;
         }
+        public NoDuplo()
+        {
+
+        }
         public Object getElemento()
         {
             return this.elemento;
@@ -23,7 +27,7 @@ namespace lista_LDE
         {
             return this.anterior;
         }
-        public void setAnterior(NoDuplo node)
+        public virtual void setAnterior(NoDuplo node)
         {
             this.anterior = node;
         }
@@ -31,7 +35,7 @@ namespace lista_LDE
         {
             return this.proximo;
         }
-        public void setProximo(NoDuplo prox)
+        public virtual void setProximo(NoDuplo prox)
         {
             this.proximo = prox;
         }

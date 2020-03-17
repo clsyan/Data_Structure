@@ -24,12 +24,12 @@ class ListaDuplamenteEncadeada
             NoDuplo a1 = new NoDuplo(5);
             NoDuplo a2 = new NoDuplo(6);
             NoDuplo a3 = new NoDuplo(7);
-            ListIterator it = new ListIterator(lista);
 
 
-            lista.insertLast(it.search(a1));
-            lista.insertFirst(it.search(a2));
-            lista.insertAfter(it.search(a2), it.search(a3));
+            lista.insertLast(a1);
+            lista.insertFirst(a2);
+            lista.insertAfter(a2,a3);
+            
             Console.WriteLine(lista.first());
 
         /*    

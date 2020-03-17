@@ -12,25 +12,26 @@ namespace vector_array
 
         public Vector(int size)
         {
+            array = new object[size];
             this.tamanho = size;
+            this.current = 0;
             
         }
         public int size()
         {
-            return this.tamanho;
+            return this.current;
         }
         public bool isEmpty()
         {
-            return tamanho==0;
+            return current==0;
         }
         public object elementAtRank(int current)
         {
-            try{
-            return array[current];
-            }
-            catch{    
+            if(current>=this.tamanho)
+            {
                 throw new EIndexOutOfRange("erro de index");
-            } 
+            }
+            return array[current];
         }
         public object replaceAtRank(int index, object obj)
         {
@@ -76,12 +77,12 @@ namespace vector_array
         }
         public object removeAtRank(int index)
         {
-            if(index < 0 || index >= tamanho)
+            if(index < 0 || index >= current)
             {
                 throw new EIndexOutOfRange("erro de index");
             }
             object aux = array[index];
-            for(int i = index; i<this.current - 1; i++)
+            for(int i = index; i<this.current; i++)
             {
                 array[i] = array[i+1];
             }

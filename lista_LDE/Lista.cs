@@ -9,6 +9,7 @@ public class Lista
     public Lista()
     {
         this.tamanho = 0;
+        
     }
     public int size()
     {

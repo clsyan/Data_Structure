@@ -1,15 +1,14 @@
 using System;
 using lista_LDE;
 
-public class NoSentinelaInicio
+namespace lista_LDE
 {
-    private NoDuplo proximo;
-    public NoDuplo getProximo()
+    class NoSentinelaInicio:NoDuplo
     {
-        return this.proximo;
-    }
-    public void setProximo(NoDuplo elemento)
-    {
-        this.proximo = elemento;
+        private NoDuplo proximo;
+        public override void setProximo(NoDuplo node)
+        {
+            this.proximo = node;
+        }
     }
 }
